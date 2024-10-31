@@ -1,0 +1,31 @@
+.s-para{
+    font-size: x-large;
+   
+    margin-top: 3cm;
+}
+.btns{
+    text-align: center;
+    padding: 10px;
+    background-color: #60A5FA;
+}
+.not{
+    margin-left: auto;
+    margin-bottom: 3cm;
+}
+@media (min-width: 476px){
+    .s-para{
+        font-size: x-large;
+       
+        margin-top: 3cm;
+    }
+    .btns{
+        text-align: center;
+        padding: 10px;
+        background-color: #60A5FA;
+    }
+    .not{
+        margin-left: 12cm;
+        margin-bottom: 3cm;
+    }
+
+}

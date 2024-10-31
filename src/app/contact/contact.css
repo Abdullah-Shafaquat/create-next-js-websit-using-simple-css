@@ -1,0 +1,118 @@
+.contact-container {
+    margin: 40px;
+    padding: 20px;
+    border: 2px solid #2f2f2f;
+    background-color: #2D3748;
+  
+    animation: slideInRight 1.5s ease-in-out;
+  }
+  
+  .desktop-view, .mobile-view {
+    display: none;
+  }
+  
+  @media (min-width: 768px) {
+    .desktop-view {
+        display: block;
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .mobile-view {
+        display: block;
+    }
+  }
+ 
+  
+  /* Slide-In Animation */
+  @keyframes slideInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    60% {
+        opacity: 1;
+        transform: translateX(-10px); 
+    }
+    100% {
+        transform: translateX(0); 
+    }
+  }
+  
+  .contact{
+    text-align:center ;
+    background-color: #fff;
+    color: #2D3748;
+    margin-bottom: 20px;
+  }
+
+  
+  .contact-form .form-group {
+    margin-bottom: 15px;
+  }
+ 
+  .contact-form label {
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .submit-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #0371f7;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    
+  }
+
+  .submit-button:hover {
+    background-color: #ffffff ;
+    color: #2D3748;
+  }
+  
+  .thank-you-message {
+    text-align: center;
+    font-weight: bold;
+    margin-top: 15px;
+    color: #fff;
+  }
+  
+  .social-links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 20px 0;
+    animation: slideInRight 1.5s ease-in-out;
+  }
+  
+  .social-icon {
+    width: 40px;
+    height: auto;
+    margin: 0 10px;
+  }
+  
+  @media (max-width: 600px) {
+    .social-links {
+        flex-direction: row;
+        justify-content: space-between;
+       gap: 2px;  
+    }
+    .social-icon {
+        width: 30px;
+    }
+  }
+  .project{
+    
+    animation: slideInLeft 1.5s ease-in-out;
+  }

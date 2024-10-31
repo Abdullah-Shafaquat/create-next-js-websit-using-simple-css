@@ -1,0 +1,132 @@
+/* headerstyle.css */
+
+.header {
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    background-color: #2D3748;
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-top: 20px;
+    width: auto;
+  }
+  
+  .header-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .logo img {
+
+    border-radius: 50%;
+    border: 2px solid rgb(255, 255, 255);
+    margin-left: .5cm;
+  }
+  
+  .title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-left: 5cm;
+    margin-top: -70px;
+    margin-bottom: 20px;
+  }
+  
+  .menu-toggle {
+    margin-left: auto;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    display: flex; /* Ensure the button is displayed as a flex item */
+  }
+  
+  .menu-icon {
+    height: 24px;
+    width: 24px;
+    display: none;
+  }
+  
+  .mobile-menu {
+    margin-top: 10px;
+    display: none;
+
+  }
+  
+  .menu-list {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+    background-color: #2D3748;
+    border: 2px solid #000000;
+    border-radius: 8px;
+    color: white;
+    
+  }
+  
+  .menu-item {
+    display: block;
+    padding: 8px;
+    color: white;
+
+    transition: color 0.3s;
+    
+  }
+  
+  .menu-item:hover {
+    color: #60A5FA;
+    text-decoration: underline ;
+  }
+  
+  .desktop-nav {
+    display: flex;
+    justify-content: center;
+    margin-top: -1cm;
+    margin-left: 12cm;
+    margin-bottom: 20px;
+    font-size: 20px;
+  }
+  
+  .nav-item {
+    margin: 0 20px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+  
+  .nav-item:hover {
+    color: #60A5FA;
+    text-decoration: underline;
+  }
+  .h2{
+    display: none;
+  }
+ 
+  @media (max-width: 768px) {
+    .desktop-nav {
+      display: none; /* Hide desktop navigation on smaller screens */
+    }
+    
+    .mobile-menu {
+      display: flex; /* Display mobile menu on smaller screens */
+      flex-direction: column; /* Stack items vertically */
+      width: 100%; /* Ensure it takes full width */
+    }
+     
+  .menu-icon {
+    display: flex;
+
+  }
+  .logo img{
+    margin-left: auto;
+  }
+  .title {
+    margin-left: 3cm;
+  }
+  .h2{
+    display: flex;
+  }
+ 
+  }
+  
